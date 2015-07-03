@@ -39,13 +39,13 @@ public class MainActivityTest
         String txt;
         switch (visibility)
         {
-            case 0: txt = "VISIBLE"; break;
-            case 4: txt = "INVISIBLE"; break;
-            case 8: txt = "GONE"; break;
+            case View.VISIBLE: txt = "VISIBLE"; break;
+            case View.INVISIBLE: txt = "INVISIBLE"; break;
+            case View.GONE: txt = "GONE"; break;
             default: txt = "UNKNOWN"; break;
         }
         System.out.println("The visibility of CardView is: " + txt);
 
-        assertEquals("CardView MUST be invisible by default.", 8, visibility);
+        assertEquals("CardView MUST be invisible by default.", View.GONE, visibility);
     }
 }
