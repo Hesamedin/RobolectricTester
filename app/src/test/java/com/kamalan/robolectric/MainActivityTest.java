@@ -8,11 +8,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricGradleTestRunner;
+import org.robolectric.annotation.Config;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 @RunWith(RobolectricGradleTestRunner.class)
+@Config(constants = BuildConfig.class, sdk = 21)
 public class MainActivityTest
 {
     private MainActivity mMainActivity;
@@ -39,7 +41,7 @@ public class MainActivityTest
         {
             case 0: txt = "VISIBLE"; break;
             case 4: txt = "INVISIBLE"; break;
-            case 8: txt = "INVISIBLE"; break;
+            case 8: txt = "GONE"; break;
             default: txt = "UNKNOWN"; break;
         }
         System.out.println("The visibility of CardView is: " + txt);
