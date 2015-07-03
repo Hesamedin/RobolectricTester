@@ -1,0 +1,41 @@
+/captures
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Mac files
+.DS_Store
+
+# Java class files
+*.class
+
+# generated files
+bin/
+build/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio Files
+*.iml
+.idea/
+
+# KDE file manager metadata
+.directory
+
+# Gradle files
+.gradle/
+
+# Signing Files
+production.vars
+
+# Eclipse Files
+.classpath
+.project
+.settings/
+project.properties
